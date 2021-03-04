@@ -1,5 +1,28 @@
 * {
-    padding: 0;
     margin: 0;
-    background-color: #FFFFFF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.container {
+    width: 1170px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.info-title {
+    padding: 45px 0px 45px 0px;
+    text-decoration: solid;
+    color: #fff;
+}
+
+.info-title h2 {
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 0px;
+
 }
