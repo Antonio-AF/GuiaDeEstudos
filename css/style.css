@@ -118,6 +118,7 @@ p {
 
 .aside-inicio {
     width: 90%;
+    height: 300px;
     margin: 0;
 }
 
@@ -134,9 +135,17 @@ p {
     z-index: 3;
 }
 
+.aside-inicio{
+    background-image: url("../img/estantes.jpg");
+    background-size: 936px 200px;
+}
+
+.aside-inicio img {    
+    height: 230px;
+}
+
 .aside-inicio img {
-    margin: 0 15px;    
-    height: 180px;
+    margin-top: 40px;
 }
 
 .aside-inicio .titulo-inicio {
@@ -144,6 +153,11 @@ p {
     width: 939.6px;
     text-align: center;
     font-size: 16px;
+}
+
+.titulo-inicio {
+    position: absolute;
+    margin-top: 250px;
 }
 
 .bar {
@@ -154,7 +168,7 @@ p {
     top: -90px;
     left: 50%;
     background: #e20c0c;
-    z-index: 2;
+    
 }
 
 .bar {
@@ -185,3 +199,21 @@ p {
     border-color: transparent transparent transparent white;
 }
 
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.timeline-container::after {
+    content: ' ';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: -19px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
