@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +10,17 @@
     <link href="js/scripts.js">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
-<body>
+
+<body onload="contCurso()">
 
     <div class="study-page">
-        
+
         <header class="study-page-datails" style='background-color: #1A7E91;'>
 
-            <div class="container" >
+            <div class="container">
                 <div class="info-title">
                     <span class="icon">
                         <img src="img/janela.png" alt="">
@@ -35,56 +36,69 @@
 
                     <div class="header-info">
                         <div class="header-info-text">
+                            <p id="cursos" style="padding: 15px; margin: 0;"></p>
+
                             <p>
-                                <span class="material-icons md-24">apps</span>
-                                4 Cursos
-                            </p>
-                            <p>
-                                <span class="material-icons md-24">access_time</span>
+                                <span class="material-icons md-24 minutos-videos">access_time</span>
                                 xxx Minutos de Vídeo
                             </p>
                             <p>
-                                <span class="material-icons">play_circle</span>
+                                <span class="material-icons aulas">play_circle</span>
                                 xx Aulas
                             </p>
                         </div>
-                        
+
                     </div>
 
                 </div>
             </div>
-            
+
         </header>
 
-        <section class="study-topics"> 
+        <section class="study-topics">
             <div class="container">
                 <div class="row">
                     <aside class="inicio">
 
                         <div class="aside-inicio">
-                            
+
                             <img src="/img/andando.gif" alt="Iniciando a Caminhada">
 
                             <div class="titulo-inicio">
                                 <h3>Início da Trilha de um Front-end</h3>
-                            </div>     
+                            </div>
 
                         </div>
                     </aside>
                     <div class="study-timeline">
-                        <div class="timeline-container left">
+                        <div class="timeline-container left"  id="mycursos">
                             <div class="content">
-                                <a href="html/teste.html"><h3>Estudando HTML</h3></a>
+                                <a href="html/estudos_html.html">
+                                    <h3>Estudando HTML</h3>
+                                </a>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     In provident pariatur totam impedit ad quod molestias beatae
                                     quisquam labore molestiae, voluptates, numquam qui accusantium
                                     harum error officia iste ipsam illum?</p>
                             </div>
+
+                            <div class="content">
+                                <a href="html/estudos_html.html">
+                                    <h3>Estudando HTML</h3>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    In provident pariatur totam impedit ad quod molestias beatae
+                                    quisquam labore molestiae, voluptates, numquam qui accusantium
+                                    harum error officia iste ipsam illum?</p>
+                            </div>
+
+                            
+                            
                         </div>
 
                         <div class="bar"></div>
 
-                        
+
                     </div>
                 </div>
             </div>
@@ -93,5 +107,18 @@
         <footer></footer>
     </div>
 
+    <script>
+
+        function contCurso() {
+            var c = document.getElementById("mycursos").childElementCount;
+            document.getElementById("cursos").innerHTML = 
+            
+            "<span class='material-icons md-24'>apps</span>" +
+            "<p style='margin: 0;'>" + c + "  Cursos </p>" ;
+        }
+
+    </script>
+
 </body>
+
 </html>
