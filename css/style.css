@@ -1,15 +1,13 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@800&display=swap');
 
-body{
+body {
     background-color: #9db2c691 !important;
 }
 
 p {
     margin: 0 0 0;
-    padding: 0;    
+    padding: 0;
 }
 
 .container {
@@ -22,26 +20,32 @@ p {
     text-decoration: solid;
     /* color: #fff; */
     color: black;
-    
+
 }
 
 .info-title h2 {
     font-family: 'Shippori Mincho B1', serif;
     font-weight: 800;
     margin-left: 25px;
-    
+
 }
 
 .info-title p {
     margin-left: 25px;
 
-    
+
 }
 
 .icon img {
     width: 125px;
     height: 125px;
     margin-left: 20px;
+}
+
+.icon-html img {
+    width: 350px;
+    height: 250px;
+    margin-right: 80px;
 }
 
 .info-title {
@@ -55,22 +59,35 @@ p {
 .header-info-text {
     display: flex;
     flex-direction: row;
-    align-items: center;    
+    align-items: center;
     justify-content: space-between;
 
 }
 
-.study-page .study-page-datails .opacity-header {
-    background-color: rgba(0, 0, 0, .2);
-    border-color: transparent;
+
+
+.study-page-html {
+    background: #fc4a1a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
+.study-page .study-page-html .opacity-header {
+    background-color: rgba(0, 0, 0, .2) ;
+    border-color: transparent ;
+}
+
 
 .study-page .study-page-datails .opacity-header .container .header-info .header-info-text p {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin-right: 5px;    
+    margin-right: 5px;
     font-weight: 400;
     text-align: left;
     color: #fff;
@@ -117,7 +134,7 @@ p {
     margin: 0;
 }
 
-.aside-inicio {    
+.aside-inicio {
     flex-direction: row;
 }
 
@@ -130,12 +147,12 @@ p {
     z-index: 3;
 }
 
-.aside-inicio{
+.aside-inicio {
     background-image: url("../img/estantes.jpg");
     background-size: 936px 200px;
 }
 
-.aside-inicio img {    
+.aside-inicio img {
     height: 230px;
 }
 
@@ -169,11 +186,11 @@ p {
     left: 50%;
     background: #156574;
     box-shadow: 0 1px 1em yellow;
-    
+
 }
 
 .bar {
-    display: inline-block;    
+    display: inline-block;
 }
 
 .left {
@@ -194,7 +211,7 @@ p {
     top: 22px;
     width: 0;
     z-index: 1;
-    right: 30px;    
+    right: 30px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
