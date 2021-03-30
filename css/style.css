@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@800&display=swap');
 
+
+/* Cor de fundo da pagina */
 body {
     background-color: #9db2c691 !important;
 }
 
+/* Reset das margens e padding das tags p */
 p {
-    margin: 0 0 0;
+    margin: 0;
     padding: 0;
 }
 
+/* Largura do container onde está o titulo principal */
 .container {
     width: 1170px;
 }
 
-
+/* Propriedades da div onde esta a img e titulo do site */
 .info-title {
     padding: 40px 0px 40px 0px;
     text-decoration: solid;
@@ -23,31 +27,6 @@ p {
 
 }
 
-.info-title h2 {
-    font-family: 'Shippori Mincho B1', serif;
-    font-weight: 800;
-    margin-left: 25px;
-
-}
-
-.info-title p {
-    margin-left: 25px;
-
-
-}
-
-.icon img {
-    width: 125px;
-    height: 125px;
-    margin-left: 20px;
-}
-
-.icon-html img {
-    width: 350px;
-    height: 250px;
-    margin-right: 80px;
-}
-
 .info-title {
     display: flex;
     flex-direction: row;
@@ -55,7 +34,35 @@ p {
     justify-content: flex-start;
 }
 
+/* Propriedades da image do site */
+.icon img {
+    width: 125px;
+    height: 125px;
+    margin-left: 20px;
+}
 
+/* Propriedades do h2 onde está o  titulo do site */
+.info-title h2 {
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: 800;
+    margin-left: 25px;
+
+}
+
+
+/* .info-title p {
+    margin-left: 25px;
+
+
+} */
+
+/* Aplica uma sombra escura no sub header */
+.opacity-header {
+    background-color: rgba(0, 0, 0, .2);
+    border-color: transparent;
+}
+
+/* Alinha os elementos da sub header em linha */
 .header-info-text {
     display: flex;
     flex-direction: row;
@@ -64,39 +71,30 @@ p {
 
 }
 
-.study-page-html {
-    background: #fc4a1a;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f7b733, #fc4a1a);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-.study-page .study-page-html .opacity-header {
-    background-color: rgba(0, 0, 0, .2) ;
-    border-color: transparent ;
-}
-
-
-.study-page .study-page-datails .opacity-header .container .header-info .header-info-text p {
+/* Alinhamento dos icones da sub header */
+.study-page
+.study-page-datails
+.opacity-header
+.container .header-info .header-info-text p {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* justify-content: flex-start; */
     margin-right: 5px;
-    font-weight: 400;
-    text-align: left;
+    /* font-weight: 400; */
+    /* text-align: left; */
     color: #fff;
 
 }
 
-
-.study-page .study-page-datails .opacity-header .container .header-info .header-info-text p span {
+/* Vai ser injetado via JS */
+/* .study-page
+.study-page-datails
+.opacity-header .container
+.header-info .header-info-text p span {
     font-size: 1.7em;
     margin-right: 5px;
-}
+} */
 
 .study-page .study-topics {
     padding: 30px 0;
@@ -227,8 +225,8 @@ p {
     width: 35px;
     height: 35px;
     right: -20px;
-    background-color: rgb(255, 0, 0);
-    border: 4px solid #156574;
+    background-color: rgb(184, 0, 0);
+    border: 4px solid #ffe602;
     top: 15px;
     border-radius: 50%;
     z-index: 1;

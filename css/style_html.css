@@ -1,0 +1,17 @@
+.study-page-html {
+    background: #fc4a1a;    
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);    
+    background: linear-gradient(to right, #f7b733, #fc4a1a);  
+
+}
+
+.icon-html img {
+    width: 350px;
+    height: 250px;
+    /* margin-right: 5px; */
+}
+
+.opacity-header {
+    background-color: rgba(0, 0, 0, .2);
+    border-color: transparent ;
+}
