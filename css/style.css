@@ -13,9 +13,17 @@ p {
     padding: 0;
 }
 
+.study-page .study-page-datails {
+    background-color: #000000;
+    background-image: linear-gradient(180deg, #000000 0%, #d6d6d6 50%, #000000 100%);
+
+
+}
+
 /* Largura do container onde está o titulo principal */
 .container {
     width: 1170px;
+
 }
 
 /* Propriedades da div onde esta a img e titulo do site */
@@ -27,6 +35,12 @@ p {
 
 }
 
+.text-title h1 {
+    font-weight: 600;
+    text-shadow: 9px 8px 5px black;
+    color: white;
+}
+
 .info-title {
     display: flex;
     flex-direction: row;
@@ -36,19 +50,20 @@ p {
 
 /* Propriedades da image do site */
 .icon img {
-    width: 125px;
-    height: 125px;
-    margin-left: 20px;
+    width: 230px;
+    height: 230px;
+    /* margin-left: 20px; */
+    margin-right: 25px;
 }
 
 /* Propriedades do h2 onde está o  titulo do site */
 .info-title h2 {
     font-family: 'Shippori Mincho B1', serif;
+    color: white;
     font-weight: 800;
     margin-left: 25px;
 
 }
-
 
 /* .info-title p {
     margin-left: 25px;
@@ -72,10 +87,7 @@ p {
 }
 
 /* Alinhamento dos icones da sub header */
-.study-page
-.study-page-datails
-.opacity-header
-.container .header-info .header-info-text p {
+.study-page .study-page-datails .opacity-header .container .header-info .header-info-text p {
     display: flex;
     /* flex-direction: row; */
     /* align-items: center; */
@@ -95,10 +107,6 @@ p {
     font-size: 1.7em;
     margin-right: 5px;
 } */
-
-.study-page .study-topics {
-    padding: 30px 0;
-}
 
 .row {
     margin-left: -15px;
@@ -123,16 +131,16 @@ p {
     margin: 35px 18px;
 }
 
-.aside-inicio {
-    border: solid 5px #156574;
+
+.aside-inicio {    
     width: 90%;
     height: 300px;
     margin: 0;
 }
 
-.aside-inicio {
+/* .aside-inicio {
     flex-direction: row;
-}
+} */
 
 .aside-inicio {
     display: flex;
@@ -157,7 +165,7 @@ p {
 }
 
 .aside-inicio .titulo-inicio {
-    background-color: #1A7E91;
+    background-color: #06181b;
     width: 560px;
     height: 55px;
     color: white;
@@ -173,6 +181,7 @@ p {
     box-shadow: inset 0 0 1em black;
 }
 
+/* Propriedades da linha vertical da linha do tempo */
 .bar {
     display: none;
     width: 5px;
@@ -180,7 +189,7 @@ p {
     position: absolute;
     top: -90px;
     left: 50%;
-    background: #156574;
+    background: #ffffff;
     box-shadow: 0 1px 1em yellow;
 
 }
@@ -215,8 +224,18 @@ p {
 
 .content {
     padding: 20px 30px;
-    background-color: white;
+    /* background-color: white; */
+    background: #fc4a1a;    
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);    
+    background: linear-gradient(to right, #f7b733, #fc4a1a);
     border-radius: 7px;
+}
+
+.content a h3 {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .timeline-container::after {

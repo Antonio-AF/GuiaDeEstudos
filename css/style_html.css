@@ -1,3 +1,18 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+
+.study-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    
+}
+
+.study-page-html {
+    width: 100%;
+}
+
 .study-page-html {
     background: #fc4a1a;    
     background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);    
@@ -11,7 +26,114 @@
     /* margin-right: 5px; */
 }
 
+.text-title h1 {
+    font-weight: 600;
+    text-shadow: 9px 8px 5px black;
+    color: white;
+}
+
 .opacity-header {
     background-color: rgba(0, 0, 0, .2);
     border-color: transparent ;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;    
+    height: 44px;
+}
+
+.link-menu {
+    margin: 20px;
+}
+
+.link-menu {
+    font-size: 20px;
+    
+}
+
+.link-menu .fa-home {
+    font-size: 35px;
+    color: black;
+}
+
+
+section {
+    width: 70%;
+    height: auto;
+    background-color: rgb(255, 255, 255);    
+    
+}
+
+section {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+    0 3px 6px rgba(0,0,0,0.23);
+    padding: 10px 35px;
+    
+}
+
+section h2 {    
+    margin-top: 25px;
+    margin-bottom: 30px;
+    
+}
+
+section h3 {
+    margin: 20px 0 25px 0 ;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+section img {
+    width: 370px;
+    justify-content: center;
+
+}
+
+
+.tagnamecolor {
+    color: brown;
+}
+
+.atributecolor {
+    color: rgb(34, 93, 255);
+}
+
+.tagname {
+    color: darkblue;
+}
+
+.atributecolor {
+    color: rgb(34, 93, 255);
+}
+
+.text_code {
+    color: black;
+}
+
+#titulo_exemplo {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.code_exemplo {
+    background-color: #F1F1F1;
+    padding: 8px 20px;
+    margin-bottom: 15px;
+}
+
+
+section .codearea {
+    padding-left: 15px;
+    width: 70%;
+    border-left: solid 4px blue;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: 'Inconsolata', monospace;
+    /* color: black !important; */
 }
