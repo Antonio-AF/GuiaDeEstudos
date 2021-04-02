@@ -65,7 +65,19 @@
                 Hipertexto."
             </p>
 
-            <h2>Declaração<span><</span><span>!DOCTYPE html</span><span>></span></h2>
+            <h2>História do HTML</h2>
+
+            <p>O <strong>HTML (HyperText Markup Language)</strong>, foi criado pelo físico britânico Tim Berners-Lee, com ajuda do estudante do
+            CERN (European Council for Nuclear Reserch), Robert Cailliau, em meados de 1989, quando eles conseguiram
+            efetuar a primeira comunicação entre cliente HTTP e um servidor.</p>
+
+            <p>Pode-se afirmar que o HTML, surgiu no início da década de 90, entre 90 e 95 sofreu diversas atualizações
+            e modificações estruturais. O controle e supervisão da linguagem foi do CERN até o ano de 1995, após esse
+            período a W3C (The World Wide Web Consortium), entidade que regula os padrões da Web, tomou as rédias da
+            linguagem.
+            </p>
+
+            <h2>Declaração <span><</span><span>!DOCTYPE html</span><span>></span>.</h2>
 
             <p>Começaremos pelo início, no nosso caso a tag <code>
                 <span class="tagname"><</span>!DOCTYPE <span class="atributecolor">html</span><span class="tagname">></span></code>.
@@ -128,7 +140,69 @@
                 fechamento, veremos no decorre dos estudos.
             </p>
 
+            <button type="button" class="sabia_mais">Saiba Mais!!!</button>
+            <div class="content">
+                <h4>Declaração no HTML 4.01</h4>
+                <p>Antes da versão do HTML 5, todo documento HTML deveria ser validado por uma
+                DTD (Document Type Definition), traduzindo: Definição de Tipo de Documento. Para
+                quê o ducumento seja devidamente validado, era preciso iniciar o documento com uma
+                DTD correta na primeira linha.
+                </p>
+                <p>A DTD Strict da versão 4.01 inclue elementos e atributos aprovados ou que não
+                    aparecem em conjuntos de molduras (framsets):
+                </p>
+                <p style="border: solid 1px black; background-color: rgb(255, 255, 255);">
+                    <span class="tagnamecolor tag-sabia">
+                        <span class="tagname"><</span>!DOCTYPE HTML PUBLIC<br>
+                        "-//W3C//DTD HTML 4.01//EN"<br>
+                        "http://www.w3.org/TR/html4/strict.dtd"<span class="tagname">></span>
+                    </span>
+                </p>
+                <p>
+                    A DTD Transitional do HTML 4.01, inclue toda DTD Strict mais os elementos e os atributos
+                    desaprovados.
+                </p>
+                <p style="border: solid 1px black; background-color: rgb(255, 255, 255);">
+                    <span class="tagnamecolor tag-sabia">
+                        <span class="tagname"><</span>!DOCTYPE HTML PUBLIC<br>
+                        "-//W3C//DTD HTML 4.01 Transitional//EN"<br>
+                        "http://www.w3.org/TR/html4/loose.dtd"<span class="tagname">></span>
+                    </span>
+                </p>
+                <p>
+                    A DTD Frameset do HTML 4.01 inclue toda DTD Transitional mais as molduras (frames).
+                </p>
+                <p style="border: solid 1px black; background-color: rgb(255, 255, 255);">
+                    <span class="tagnamecolor tag-sabia">
+                        <span class="tagname"><</span>!DOCTYPE HTML PUBLIC<br>
+                        "-//W3C//DTD HTML 4.01 Frameset//EN"<br>
+                        "http://www.w3.org/TR/html4/frameset.dtd"<span class="tagname">></span>
+                    </span>
+                </p>
 
+
+            </div>
+
+            <h2>Tag de comentários <span><</span><span>!--...--</span><span>></span>.</h2>
+
+            <p>
+                <div class="code_exemplo">
+                    <h3>Exemplo</h3>
+                    <p id="titulo_exemplo">Comentários em HTML</p>
+                    <div class="codearea">
+                        <span class="tagnamecolor">
+                            <span class="tagname"><</span>!-- Todo texto ou código digitados dentro da tag não
+                            serão interpretadas pela linguagem.<span class="tagname">></span>
+                        </span>
+                            <br>
+                        <span class="tagnamecolor">
+                            <span class="tagname"><</span>p<span class="tagname">></span>Tag paragrafo<span class="tagname"><</span>/p<span class="tagname">></span>
+                        </span>
+                            
+                    </div>
+                </div>
+            </p>
+            
 
 
         </section>
@@ -136,7 +210,22 @@
     </div>
 
 
+    <script>
+        var coll = document.getElementsByClassName("sabia_mais");
+        var i;
 
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 
 </body>
 

@@ -12,6 +12,7 @@
 
 .study-page-html {
     width: 100%;
+    /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
 }
 
 .study-page-html {
@@ -19,6 +20,11 @@
     background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);    
     background: linear-gradient(to right, #f7b733, #fc4a1a);  
 
+}
+
+.study-page-html {
+    position: absolute;
+    z-index: 3;
 }
 
 .icon-html img {
@@ -34,6 +40,7 @@
 }
 
 .opacity-header {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     background-color: rgba(0, 0, 0, .2);
     border-color: transparent ;
 }
@@ -44,6 +51,7 @@
     /* justify-content: space-between; */
     align-items: center;    
     height: 44px;
+    /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
 }
 
 .container-menu .menu-link {
@@ -53,10 +61,12 @@
 }
 
 .link-menu {
-    font-size: 18px;
-    font-family: 'Fredoka One', cursive;
+    font-size: 17px;
+    /* font-family: 'Fredoka One', cursive; */
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: bold;
     color: rgb(255, 255, 255);
-    letter-spacing: 1.2px;
+    letter-spacing: 1.3px;
     margin-left: 20px;
     margin-right: 20px;
 
@@ -69,10 +79,11 @@
 
 .link-menu:hover {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .container-menu div:hover {
+    color: black;
     background: #fc4a1a;    
     background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);    
     background: linear-gradient(to right, #f7b733, #fc4a1a);
@@ -82,14 +93,15 @@
 section {
     width: 70%;
     height: auto;
-    background-color: rgb(255, 255, 255);    
+    background-color: rgb(255, 255, 255);
+    margin-top: 374px;    
     
 }
 
 section {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16),
     0 3px 6px rgba(0,0,0,0.23);
-    padding: 10px 35px;
+    padding: 10px 55px 10px 35px ;
     
 }
 
@@ -101,6 +113,10 @@ section h2 {
 
 section h3 {
     margin: 20px 0 25px 0 ;
+}
+
+section p {
+    text-align: justify;
 }
 
 .container {
@@ -125,6 +141,7 @@ section img {
 
 .tagname {
     color: darkblue;
+    font-weight: 500;
 }
 
 .atributecolor {
@@ -144,6 +161,8 @@ section img {
     background-color: #F1F1F1;
     padding: 8px 20px;
     margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 
@@ -156,3 +175,55 @@ section .codearea {
     font-family: 'Inconsolata', monospace;
     /* color: black !important; */
 }
+
+.sabia_mais {    
+    background: #fc4a1a;    
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);    
+    background: linear-gradient(to right, #f7b733, #fc4a1a);
+}
+
+.sabia_mais {
+    /* background-color: rgb(58, 58, 58); */
+    color: rgb(0, 0, 0);
+    font-family: "Segoe UI",Arial,sans-serif;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    display: inline-block;
+}
+
+button.sabia_mais:after {
+    content: '\002B';
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    float: right;
+    /* margin-left: 5px; */
+
+}
+
+button.sabia_mais.active::after {
+    content: '\2212';
+}
+
+.content {
+    display: none;
+    padding: 25px;
+    background: rgba(93, 93, 93, 0.16);
+    border-radius: 0;
+}
+
+.tag-sabia {
+    font-family: 'Inconsolata', monospace;
+}
+
+
