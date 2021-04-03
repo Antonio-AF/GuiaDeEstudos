@@ -65,7 +65,7 @@
                 Hipertexto."
             </p>
 
-            <h2>História do HTML</h2>
+            <h2 id="ancora">História do HTML</h2>
 
             <p>O <strong>HTML (HyperText Markup Language)</strong>, foi criado pelo físico britânico Tim Berners-Lee, com ajuda do estudante do
             CERN (European Council for Nuclear Reserch), Robert Cailliau, em meados de 1989, quando eles conseguiram
@@ -192,7 +192,7 @@
                     <div class="codearea">
                         <span class="tagnamecolor">
                             <span class="tagname"><</span>!-- Todo texto ou código digitados dentro da tag não
-                            serão interpretadas pela linguagem.<span class="tagname">></span>
+                            serão interpretadas pela linguagem. --<span class="tagname">></span>
                         </span>
                             <br>
                         <span class="tagnamecolor">
@@ -202,7 +202,100 @@
                     </div>
                 </div>
             </p>
+
+            <h3>Definição e Uso</h3>
+
+            <p>
+                A tag de comentários é utilizada para inserir trechos de informações dentro do código,
+                sem alterar a estrutura nem o layout.
+            </p>
+            <p>
+                Os comentários são usados pelos desenvolvedores para documentar o código, deixando ele
+                o mais legível possível, são como migalhas de pão, servem como guia para outros
+                desenvolvedores entendam por qual motivo ou funcionalidade aquele trecho de código
+                foi inserido ali.
+            </p>
+
+            <h2>Tag ancora <span><</span><span>a</span><span>></span>.</h2>
             
+            <p>
+                <div class="code_exemplo">
+                    <h3>Exemplo</h3>
+                    <p id="titulo_exemplo">Criando um link dentro do documento HTML</p>
+                    <div class="codearea">
+                        <span class="tagnamecolor">
+                            <span class="tagname"><</span>a href="http://google.com.br"<span class="tagname">></span>
+                            Clique aqui para ir para o Google!!! <span class="tagname"><</span>/a<span class="tagname">></span>
+                            <br>
+                            <br>
+                            <p>O exemplo acima fica dessa forma.</p> 
+                            <a href="http://google.com.br">Clique aqui para ir para o Google!!!.</a>
+                        </span>
+                            
+                    </div>
+                </div>
+            </p>
+
+            <h3>Definição e Uso</h3>
+
+            <p>
+                Um hiperlink é definido pela tag
+                <span class="tagnamecolor">                    
+                    <span class="tagname"><</span>a<span class="tagname">></span></span>,
+                utilizamos a tag para vincular uma página a outra.               
+            </p>
+
+            <p>
+                A tag <span class="tagnamecolor">                    
+                    <span class="tagname"><</span>a<span class="tagname">></span></span>
+                não funciona sem o atributo <span class="tagnamecolor">href="Insira aqui o Link"</span>,
+                esse atributo serve para indicar o link de destino.
+            </p>
+            <p>
+                É possivel criar com a tag <span class="tagname"><</span>a<span class="tagname">></span></span>,
+                âncoras dentro da propria página, possibilitando o acesso mais rápido à um determinado ponto da página.
+            </p>
+
+            <p>
+                <div class="code_exemplo">
+                    <h3>Exemplo</h3>
+                    <p id="titulo_exemplo">Criando uma âncora dentro do mesmo documento HTML</p>
+                    <div class="codearea">
+                        <span class="tagnamecolor">
+                            <p class="tag-text-color">No exemplo abaixo o link vai direcionar o usuário ao início da página.</p>                            
+                            
+                            <p style="color: black;">Primeiro precisamos dar um id para o ponto onde pretendemos ser direcionado,
+                                pode ser qualquer ponto, um titulo, paragrafo ou uma image etc.
+                            </p>
+                            <span class="tagname"><</span>h2
+                            <span class="tag-class">id</span>=<span class="tag-class-name">"ancora"</span><span class="tagname">></span>
+                            História do HTML.<span class="tagname"><</span>/h2<span class="tagname">></span>
+                            <br>
+                            <br>
+
+                            <p>
+                                <span class="tag-text-color">Criamos uma tag</span> <span class="tagname"><</span>a<span class="tagname">></span></span>,
+                                <span class="tag-text-color">e em </span><span class="tag-class">href</span>=<span class="tag-class-name">"ancora"</span>,
+                                <span class="tag-text-color">utilizamos o id do ponto.</span>
+                            </p>                                
+                                
+                            <p>
+                                <span class="tagname"><</span>a
+                                <span class="tag-class">href</span>=<span class="tag-class-name">"ancora"</span><span class="tagname">></span>
+                                 História do HTML.<span class="tagname"><</span>/a<span class="tagname">></span>
+                            </p>
+                            <br>
+                            <p class="tag-text-color">O exemplo acima fica dessa forma.</p> 
+                            <p><a href="#ancora">História do HTML.</a></p><br>
+                            
+                        </span>
+                            
+                    </div>
+                </div>
+            </p>
+
+            
+
 
 
         </section>
