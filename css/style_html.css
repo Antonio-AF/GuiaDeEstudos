@@ -139,11 +139,11 @@ section img {
 }
 
 .tag-text-color {
-    color: black;
+    color: rgb(240, 240, 240);
 }
 
 .tagnamecolor {
-    color: brown;
+    color: rgb(187, 46, 46);
 }
 
 .atributecolor {
@@ -151,7 +151,7 @@ section img {
 }
 
 .tagname {
-    color: darkblue;
+    color: rgb(184, 184, 184);
     font-weight: 500;
 }
 
@@ -160,7 +160,7 @@ section img {
 }
 
 .text_code {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 #titulo_exemplo {
@@ -181,7 +181,7 @@ section .codearea {
     padding-left: 15px;
     width: 100%;
     border-left: solid 4px blue;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(42, 49, 70);
     font-size: 16px;
     font-family: 'Inconsolata', monospace;
     /* color: black !important; */

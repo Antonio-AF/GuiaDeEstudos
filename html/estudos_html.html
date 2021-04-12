@@ -16,45 +16,41 @@
 
 </head>
 
-<body>
+<body class="study-page">
+    
+    <header class="study-page-html">
 
-    <div class="study-page">
-
-        <header class="study-page-html">
-
-            <div class="container">
-                <div class="info-title">
-                    <span class="icon-html">
-                        <img src="../img/html1.png" alt="">
-                    </span>
-                    <div class="text-title html-page">
-                        <h1>Linguagem de Marcação de HiperTexto</h1>
-                    </div>
+        <div class="container">
+            <div class="info-title">
+                <span class="icon-html">
+                    <img src="../img/html1.png" alt="Logo do Site Escudo HTML 5">
+                </span>
+                <div class="text-title html-page">
+                    <h1>Linguagem de Marcação de HiperTexto</h1>
                 </div>
             </div>
-            <div class="opacity-header">
-                <div class="container-menu">
+        </div>
+        <div class="opacity-header">
+            <nav class="container-menu">
+                <div class="menu-link" style="height: 44px; width: 100; padding: 5px 0 0 5px;"><a
+                 href="../index.html" class="link-menu"><i class="fa fa-home"></i></a></div>
+                <div class="menu-link"><a href="../html/estudos_html.html" class="link-menu">HTML</a></div>
+                <div class="menu-link"><a href="../html/estudos_css.html" class="link-menu">CSS</a> </div>
+                <div class="menu-link"><a href="../html/estudos_js.html" class="link-menu">JAVASCRIPT</a></div>
+                <div class="menu-link"><a href="../html/estudos_js.html" class="link-menu">PYTHON</a></div>
+            </nav>
+        </div>
 
-                    <div class="menu-link" style="height: 44px; width: 100; padding: 5px 0 0 5px;"><a
-                            href="../index.html" class="link-menu"><i class="fa fa-home"></i></a></div>
-                    <div class="menu-link"><a href="../html/estudos_html.html" class="link-menu">HTML</a></div>
-                    <div class="menu-link"><a href="../html/estudos_css.html" class="link-menu">CSS</a> </div>
-                    <div class="menu-link"><a href="../html/estudos_js.html" class="link-menu">JAVASCRIPT</a></div>
-                    <div class="menu-link"><a href="../html/estudos_js.html" class="link-menu">PYTHON</a></div>
+    </header>
 
+    <section>
 
-                </div>
-            </div>
-
-        </header>
-
-        <section>
+        <div class="introducao">
             <h2>O que é HTML?</h2>
 
             <div class="container">
                 <img src="../img/html5.png" alt="Image monitor com HTML5">
             </div>
-
 
             <p>
                 HTML, nada mais é do que uma limguagem de marcação que dá a estrutura de todas as paginas web.
@@ -69,7 +65,8 @@
 
             <p>O <strong>HTML (HyperText Markup Language)</strong>, foi criado pelo físico britânico Tim Berners-Lee, com ajuda do estudante do
             CERN (European Council for Nuclear Reserch), Robert Cailliau, em meados de 1989, quando eles conseguiram
-            efetuar a primeira comunicação entre cliente HTTP e um servidor.</p>
+            efetuar a primeira comunicação entre cliente HTTP e um servidor.
+            </p>
 
             <p>Pode-se afirmar que o HTML, surgiu no início da década de 90, entre 90 e 95 sofreu diversas atualizações
             e modificações estruturais. O controle e supervisão da linguagem foi do CERN até o ano de 1995, após esse
@@ -77,7 +74,12 @@
             linguagem.
             </p>
 
-            <h2>Declaração <span><</span><span>!DOCTYPE html</span><span>></span>.</h2>
+        </div>
+
+        <div class="declaracao-doctype">
+            <h2>
+                Declaração <span><</span><span>!DOCTYPE html</span><span>></span>.
+            </h2>
 
             <p>Começaremos pelo início, no nosso caso a tag <code>
                 <span class="tagname"><</span>!DOCTYPE <span class="atributecolor">html</span><span class="tagname">></span></code>.
@@ -130,59 +132,64 @@
             </p>
 
             <p>É utilizado essa marcação, para mostrar para o navegador que estamos trabalhando com HTML na sua versão
-                5, <br>
-                dessa forma o navegador poderá carregar a pagina utilizado as funcionalidades da versão.</p>
+            5, dessa forma o navegador poderá carregar a pagina utilizado as funcionalidades da versão.
+            </p>
 
             <p>Ao iniciar um projeto em HTML, declaramos a sua versão usando !DOCTYPE html, como mostrado no exemplo,
                 <br>
                 lembrando que a declaração !DOCTYPE não é uma tag, sendo assim ela não possue fechamento, existem tags
-                que não possuem<br>
+                que não possuem
+                <br>
                 fechamento, veremos no decorre dos estudos.
             </p>
 
-            <button type="button" class="sabia_mais">Saiba Mais!!!</button>
-            <div class="content">
-                <h4>Declaração no HTML 4.01</h4>
-                <p>Antes da versão do HTML 5, todo documento HTML deveria ser validado por uma
-                DTD (Document Type Definition), traduzindo: Definição de Tipo de Documento. Para
-                quê o ducumento seja devidamente validado, era preciso iniciar o documento com uma
-                DTD correta na primeira linha.
-                </p>
-                <p>A DTD Strict da versão 4.01 inclue elementos e atributos aprovados ou que não
-                    aparecem em conjuntos de molduras (framsets):
-                </p>
-                <p style="border: solid 1px black; background-color: rgb(255, 255, 255);">
-                    <span class="tagnamecolor tag-sabia">
-                        <span class="tagname"><</span>!DOCTYPE HTML PUBLIC<br>
-                        "-//W3C//DTD HTML 4.01//EN"<br>
-                        "http://www.w3.org/TR/html4/strict.dtd"<span class="tagname">></span>
-                    </span>
-                </p>
-                <p>
-                    A DTD Transitional do HTML 4.01, inclue toda DTD Strict mais os elementos e os atributos
-                    desaprovados.
-                </p>
-                <p style="border: solid 1px black; background-color: rgb(255, 255, 255);">
-                    <span class="tagnamecolor tag-sabia">
-                        <span class="tagname"><</span>!DOCTYPE HTML PUBLIC<br>
-                        "-//W3C//DTD HTML 4.01 Transitional//EN"<br>
-                        "http://www.w3.org/TR/html4/loose.dtd"<span class="tagname">></span>
-                    </span>
-                </p>
-                <p>
-                    A DTD Frameset do HTML 4.01 inclue toda DTD Transitional mais as molduras (frames).
-                </p>
-                <p style="border: solid 1px black; background-color: rgb(255, 255, 255);">
-                    <span class="tagnamecolor tag-sabia">
-                        <span class="tagname"><</span>!DOCTYPE HTML PUBLIC<br>
-                        "-//W3C//DTD HTML 4.01 Frameset//EN"<br>
-                        "http://www.w3.org/TR/html4/frameset.dtd"<span class="tagname">></span>
-                    </span>
-                </p>
+            <div class="button-saiba-mais">
+                <button type="button" class="sabia_mais">Saiba Mais!!!</button>
+                <div class="content">
+                    <h4>Declaração no HTML 4.01</h4>
+                    <p>Antes da versão do HTML 5, todo documento HTML deveria ser validado por uma
+                    DTD (Document Type Definition), traduzindo: Definição de Tipo de Documento. Para
+                    quê o ducumento seja devidamente validado, era preciso iniciar o documento com uma
+                    DTD correta na primeira linha.
+                    </p>
+                    <p>A DTD Strict da versão 4.01 inclue elementos e atributos aprovados ou que não
+                        aparecem em conjuntos de molduras (framsets):
+                    </p>
+                    <p style="border: solid 1px black; background-color: rgb(255, 255, 255);">
+                        <span class="tagnamecolor tag-sabia">
+                            <span class="tagname"><</span>!DOCTYPE HTML PUBLIC<br>
+                            "-//W3C//DTD HTML 4.01//EN"<br>
+                            "http://www.w3.org/TR/html4/strict.dtd"<span class="tagname">></span>
+                        </span>
+                    </p>
+                    <p>
+                        A DTD Transitional do HTML 4.01, inclue toda DTD Strict mais os elementos e os atributos
+                        desaprovados.
+                    </p>
+                    <p style="border: solid 1px black; background-color: rgb(255, 255, 255);">
+                        <span class="tagnamecolor tag-sabia">
+                            <span class="tagname"><</span>!DOCTYPE HTML PUBLIC<br>
+                            "-//W3C//DTD HTML 4.01 Transitional//EN"<br>
+                            "http://www.w3.org/TR/html4/loose.dtd"<span class="tagname">></span>
+                        </span>
+                    </p>
+                    <p>
+                        A DTD Frameset do HTML 4.01 inclue toda DTD Transitional mais as molduras (frames).
+                    </p>
+                    <p style="border: solid 1px black; background-color: rgb(255, 255, 255);">
+                        <span class="tagnamecolor tag-sabia">
+                            <span class="tagname"><</span>!DOCTYPE HTML PUBLIC<br>
+                            "-//W3C//DTD HTML 4.01 Frameset//EN"<br>
+                            "http://www.w3.org/TR/html4/frameset.dtd"<span class="tagname">></span>
+                        </span>
+                    </p>
 
 
+                </div>
             </div>
+        </div>
 
+        <div class="tag-comentario">
             <h2>Tag de comentários <span><</span><span>!--...--</span><span>></span>.</h2>
 
             <p>
@@ -198,7 +205,7 @@
                         <span class="tagnamecolor">
                             <span class="tagname"><</span>p<span class="tagname">></span>Tag paragrafo<span class="tagname"><</span>/p<span class="tagname">></span>
                         </span>
-                            
+                                
                     </div>
                 </div>
             </p>
@@ -215,92 +222,131 @@
                 desenvolvedores entendam por qual motivo ou funcionalidade aquele trecho de código
                 foi inserido ali.
             </p>
+        </div>
 
-            <h2>Tag ancora <span><</span><span>a</span><span>></span>.</h2>
+        <div class="tag-ancora">
+        <h2>Tag ancora <span><</span><span>a</span><span>></span>.</h2>
             
-            <p>
-                <div class="code_exemplo">
-                    <h3>Exemplo</h3>
-                    <p id="titulo_exemplo">Criando um link dentro do documento HTML</p>
-                    <div class="codearea">
-                        <span class="tagnamecolor">
-                            <span class="tagname"><</span>a href="http://google.com.br"<span class="tagname">></span>
-                            Clique aqui para ir para o Google!!! <span class="tagname"><</span>/a<span class="tagname">></span>
-                            <br>
-                            <br>
-                            <p>O exemplo acima fica dessa forma.</p> 
-                            <a href="http://google.com.br">Clique aqui para ir para o Google!!!.</a>
+        <p>
+            <div class="code_exemplo">
+                <h3>Exemplo</h3>
+                <p id="titulo_exemplo">Criando um link dentro do documento HTML</p>
+                <div class="codearea">
+                    <span class="tagnamecolor">
+                        <span class="tagname"><</span>a href="http://google.com.br"<span class="tagname">></span>
+                            Clique aqui para ir para o Google!!! <span class="tagname"><</span>/a<span class="tagname">>                            
                         </span>
+                        <br>
+                        <br>
+                        <p>
+                            O exemplo acima fica dessa forma.
+                        </p> 
+                        <a href="http://google.com.br">Clique aqui para ir para o Google!!!.</a>
+                    </span>
                             
-                    </div>
                 </div>
-            </p>
+            </div>
+        </p>
+
+        <h3>Definição e Uso</h3>
+
+        <p>
+            Um hiperlink é definido pela tag
+            <span class="tagnamecolor">                    
+                <span class="tagname"><</span>a<span class="tagname">></span></span>,
+            utilizamos a tag para vincular uma página a outra.               
+        </p>
+
+        <p>
+            A tag <span class="tagnamecolor">                    
+                <span class="tagname"><</span>a<span class="tagname">></span></span>
+            não funciona sem o atributo <span class="tagnamecolor">href="Insira aqui o Link"</span>,
+            esse atributo serve para indicar o link de destino.
+        </p>
+        <p>
+            É possivel criar com a tag <span class="tagname"><</span>a<span class="tagname">></span></span>,
+            âncoras dentro da propria página, possibilitando o acesso mais rápido à um determinado ponto da página.
+        </p>
+
+            
+        <div class="code_exemplo">
+                <h3>Exemplo</h3>
+                <p id="titulo_exemplo">Criando uma âncora dentro do mesmo documento HTML</p>
+                <div class="codearea">
+                    <span class="tagnamecolor">
+                        <p class="tag-text-color">No exemplo abaixo o link vai direcionar o usuário ao início da página.</p>                            
+                                
+                        <p class="tag-text-color">Primeiro precisamos dar um id para o ponto onde pretendemos ser direcionado,
+                                    pode ser qualquer ponto, um titulo, paragrafo ou uma image etc.
+                        </p>
+                        <span class="tagname"><</span>h2
+                        <span class="tag-class">id</span>=<span class="tag-class-name">"ancora"</span><span class="tagname">></span>
+                        História do HTML.<span class="tagname"><</span>/h2<span class="tagname">></span>
+                        <br>
+                        <br>
+
+                        <p>
+                            <span class="tag-text-color">Criamos uma tag</span> <span class="tagname"><</span>a<span class="tagname">></span></span>,
+                            <span class="tag-text-color">e em </span><span class="tag-class">href</span>=<span class="tag-class-name">"ancora"</span>,
+                            <span class="tag-text-color">utilizamos o id do ponto.</span>
+                        </p>                                
+                                    
+                        <p>
+                            <span class="tagname"><</span>a
+                            <span class="tag-class">href</span>=<span class="tag-class-name">"ancora"</span><span class="tagname">></span>
+                                História do HTML.<span class="tagname"><</span>/a<span class="tagname">></span>
+                        </p>
+                            <br>
+                        <p class="tag-text-color">
+                            O exemplo acima fica dessa forma.
+                        </p> 
+                        <p>
+                            <a href="#ancora">História do HTML.</a>
+                        </p>
+                        <br>
+                                
+                    </span>
+                                
+                </div>
+            </div>
+        </div>    
+
+        <div class="tag-de-abreviacao">
+            <h2>Tag de abreviação <span><</span><span>abbr</span><span>></span>.</h2>
+                
+                
+            <div class="code_exemplo">
+                <h3>Exemplo</h3>
+                <p id="titulo_exemplo">Usando o elemento de abreviação.</p>
+                <div class="codearea">
+                    <span class="tagnamecolor">
+                        <span class="tag-text-color">O </span>
+                        <span class="tagname"><</span>abbr <span class="tag-class">title</span>=<span class="tag-class-name">"HiperText Markup Language"</span><span class="tagname">></span><span class="tag-text-color">HTML</span><span class="tagname"><</span>/abbr<span class="tagname">></span>
+                          <p class="tag-text-color"> é uma linguagem de marcação utilizada para criação de paginas web.</p>
+                        
+                        <br>
+                        <br>
+                        <p class="tag-text-color">O <abbr title="HiperText Markup Language">HTML</abbr> é uma linguagem de marcação utilizada para criação de páginas web.</p> 
+                            
+                    </span>
+                                
+                </div>
+            </div>
 
             <h3>Definição e Uso</h3>
-
-            <p>
-                Um hiperlink é definido pela tag
-                <span class="tagnamecolor">                    
-                    <span class="tagname"><</span>a<span class="tagname">></span></span>,
-                utilizamos a tag para vincular uma página a outra.               
-            </p>
-
-            <p>
-                A tag <span class="tagnamecolor">                    
-                    <span class="tagname"><</span>a<span class="tagname">></span></span>
-                não funciona sem o atributo <span class="tagnamecolor">href="Insira aqui o Link"</span>,
-                esse atributo serve para indicar o link de destino.
-            </p>
-            <p>
-                É possivel criar com a tag <span class="tagname"><</span>a<span class="tagname">></span></span>,
-                âncoras dentro da propria página, possibilitando o acesso mais rápido à um determinado ponto da página.
-            </p>
-
-            <p>
-                <div class="code_exemplo">
-                    <h3>Exemplo</h3>
-                    <p id="titulo_exemplo">Criando uma âncora dentro do mesmo documento HTML</p>
-                    <div class="codearea">
-                        <span class="tagnamecolor">
-                            <p class="tag-text-color">No exemplo abaixo o link vai direcionar o usuário ao início da página.</p>                            
-                            
-                            <p style="color: black;">Primeiro precisamos dar um id para o ponto onde pretendemos ser direcionado,
-                                pode ser qualquer ponto, um titulo, paragrafo ou uma image etc.
-                            </p>
-                            <span class="tagname"><</span>h2
-                            <span class="tag-class">id</span>=<span class="tag-class-name">"ancora"</span><span class="tagname">></span>
-                            História do HTML.<span class="tagname"><</span>/h2<span class="tagname">></span>
-                            <br>
-                            <br>
-
-                            <p>
-                                <span class="tag-text-color">Criamos uma tag</span> <span class="tagname"><</span>a<span class="tagname">></span></span>,
-                                <span class="tag-text-color">e em </span><span class="tag-class">href</span>=<span class="tag-class-name">"ancora"</span>,
-                                <span class="tag-text-color">utilizamos o id do ponto.</span>
-                            </p>                                
-                                
-                            <p>
-                                <span class="tagname"><</span>a
-                                <span class="tag-class">href</span>=<span class="tag-class-name">"ancora"</span><span class="tagname">></span>
-                                 História do HTML.<span class="tagname"><</span>/a<span class="tagname">></span>
-                            </p>
-                            <br>
-                            <p class="tag-text-color">O exemplo acima fica dessa forma.</p> 
-                            <p><a href="#ancora">História do HTML.</a></p><br>
-                            
-                        </span>
-                            
-                    </div>
-                </div>
-            </p>
-
             
+            <p>O elemento de abreviação <span class="tagname"><</span>abbr<span class="tagname">></span> é utilizado para representar uma abreviação
+            e apresentar uma descrição completa das siglas.
+            </p>
+                
+        </div>
 
 
 
-        </section>
 
-    </div>
+    </section>
+
+    
 
 
     <script>
@@ -319,6 +365,7 @@
             });
         }
     </script>
+
 
 </body>
 
